@@ -5,13 +5,7 @@ const Form = () => {
   const [formData, setFormData] = useState({
     nama: "",
     alamat: "",
-    kecamatan: "",
-    kamar: "",
-    terapis: "",
-    perawatan: "",
-    durasi: "",
-    waktu: "",
-    harga: "",
+    layanan: "",
     catatan: "",
   });
 
@@ -27,22 +21,15 @@ const Form = () => {
     e.preventDefault();
 
     const pesan = `
- *Order Shinta Massage via WhatsApp* :
+ *Order Home Service Modena* :
  
 👤 Nama: ${formData.nama}
 🏠 Alamat: ${formData.alamat}
-🏠 Kecamatan: ${formData.kecamatan}
-
-🚪 No. Kamar: ${formData.kamar}
-🧑‍⚕️ Terapis: ${formData.terapis}
-💆‍♀️ Layanan: ${formData.perawatan}
-⏳ Durasi: ${formData.durasi}
-🕒 Waktu: ${formData.waktu}
-💸 Harga: ${formData.harga}
+💆‍♀️ Layanan: ${formData.layanan}
 📝 Catatan: ${formData.catatan}
     `;
 
-    const nomorTujuan = "6281382228051";
+    const nomorTujuan = "6288290685638";
     const encodedPesan = encodeURIComponent(pesan);
     const url = `https://wa.me/${nomorTujuan}?text=${encodedPesan}`;
 
@@ -54,13 +41,7 @@ const Form = () => {
       {[
         ["nama", "Nama Lengkap"],
         ["alamat", "Alamat Lengkap"],
-        ["kecamatan", "Kecamatan Lengkap"],
-        ["kamar", "Nomor Kamar"],
-        ["terapis", "Terapis Laki-laki/Perempuan"],
-        ["perawatan", "Layanan"],
-        ["durasi", "Durasi"],
-        ["waktu", "Waktu"],
-        ["harga", "Harga"],
+        ["layanan", "Layanan"],
         ["catatan", "Catatan"],
       ].map(([name, label]) => (
         <fieldset key={name} className="fieldset">
@@ -78,7 +59,7 @@ const Form = () => {
 
       <button
         type="submit"
-        className="btn bg-emerald-600 text-white border-0 shadow-none mt-4 w-36 col-span-2 justify-self-start"
+        className="btn bg-white text-black border-0 shadow-none mt-4 w-36 col-span-2 justify-self-start"
       >
         Kirim
       </button>

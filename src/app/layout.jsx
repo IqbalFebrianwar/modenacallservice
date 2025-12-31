@@ -14,46 +14,46 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Bunda Shinta Massage Spa | Massage Panggilan Profesional",
+  title: "Modena Call Service | Service Kompor Resmi ke Rumah",
   description:
-    "Layanan massage panggilan profesional ke rumah Anda di Jakarta. Terapis berpengalaman, ramah, dan bersertifikat. Booking sekarang dengan Bunda Shinta Massage Spa!",
+    "Layanan Modena Call Service untuk perbaikan, perawatan, bongkar pasang, dan penggantian suku cadang kompor Modena. Teknisi profesional datang langsung ke rumah Anda.",
   keywords: [
-    "massage panggilan Jakarta",
-    "pijat di rumah Jakarta",
-    "bunda shinta massage",
-    "spa panggilan Jakarta",
-    "pijat tradisional",
-    "refleksi panggilan",
-    "bekam Jakarta",
-    "massage wanita ke rumah",
+    "modena call service",
+    "service kompor modena",
+    "service kompor freestanding modena",
+    "service kompor tanam modena",
+    "teknisi kompor modena",
+    "perbaikan kompor gas modena",
+    "service kompor jakarta",
+    "service kompor surabaya",
   ],
-  authors: [{ name: "Bunda Shinta" }],
-  creator: "Bunda Shinta",
-  metadataBase: new URL("https://bundashinta.vercel.app"),
+  authors: [{ name: "Modena Call Service" }],
+  creator: "Modena Call Service",
+  metadataBase: new URL("https://homeservicemodena.vercel.app"),
   openGraph: {
-    title: "Bunda Shinta Massage Spa | Massage Panggilan Profesional",
+    title: "Modena Call Service | Service Kompor ke Rumah",
     description:
-      "Nikmati layanan massage dan spa panggilan langsung ke rumah Anda dengan terapis profesional. Praktis, nyaman, dan terpercaya.",
-    url: "https://bundashintamassagespa.my.id",
-    siteName: "Bunda Shinta Massage Spa",
+      "Layanan resmi Modena Call Service untuk perbaikan dan perawatan kompor gas Modena. Teknisi berpengalaman, cepat, dan bergaransi.",
+    url: "https://modenacallservice.vercel.app",
+    siteName: "Modena Call Service",
     locale: "id_ID",
     type: "website",
     images: [
       {
-        url: "https://res.cloudinary.com/df6nytit6/image/upload/v1745417119/bundashinta/logo_shinta_massage_n8pn4c.png",
-        width: 800,
-        height: 600,
-        alt: "Bunda Shinta Massage Spa Logo",
+        url: "https://images.unsplash.com/photo-1600490036275-35f5f1656861?auto=format&fit=crop&w=1200&q=80",
+        width: 1200,
+        height: 630,
+        alt: "Modena Call Service - Service Kompor",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bunda Shinta Massage Spa | Massage Panggilan Jakarta",
+    title: "Modena Call Service | Service Kompor Gas",
     description:
-      "Massage profesional ke rumah Anda, praktis & nyaman. Booking sekarang juga!",
+      "Perbaikan & perawatan kompor Modena langsung ke rumah. Aman, cepat, dan profesional.",
     images: [
-      "https://res.cloudinary.com/df6nytit6/image/upload/v1745417119/bundashinta/logo_shinta_massage_n8pn4c.png",
+      "https://images.unsplash.com/photo-1600490036275-35f5f1656861?auto=format&fit=crop&w=1200&q=80",
     ],
   },
   robots: {
@@ -70,39 +70,46 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html data-theme="light" lang="en">
+    <html data-theme="light" lang="id">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="drawer">
           <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+
           <div className="drawer-content">
             <Navbar />
             <main>{children}</main>
           </div>
+
+          {/* MOBILE DRAWER */}
           <div className="drawer-side z-40">
             <label
               htmlFor="my-drawer"
               aria-label="close sidebar"
               className="drawer-overlay"
             ></label>
-            <ul className="menu bg-neutral-800 text-white min-h-full w-80 p-4">
+
+            <ul className="menu bg-black text-white min-h-full w-80 p-4">
               <li>
-                <Link href="#tentang">Tentang</Link>
+                <Link href="#tentang">Tentang Kami</Link>
               </li>
               <li>
-                <Link href="#harga">Harga</Link>
+                <Link href="#harga">Layanan</Link>
+              </li>
+              <li>
+                <Link href="#galeri">Galeri</Link>
               </li>
               <li>
                 <Link href="#testimoni">Testimoni</Link>
               </li>
               <li className="mt-4">
                 <Link
-                  href="https://wa.me/6281382228051?text=Halo%20Bunda%20Shinta%2C%20saya%20ingin%20pesan%20massage"
+                  href="https://wa.me/6288290685638"
                   target="_blank"
-                  className="btn bg-white text-neutral-600 font-semibold border-0 shadow-none rounded-full"
+                  className="btn bg-white text-black font-semibold border-0 shadow-none rounded-full"
                 >
-                  Kontak Kami
+                  Hubungi Teknisi
                 </Link>
               </li>
             </ul>

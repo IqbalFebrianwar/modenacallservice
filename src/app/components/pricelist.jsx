@@ -2,106 +2,72 @@ import Image from "next/image";
 
 const Pricelist = () => {
   return (
-    <main id="harga" className="w-full px-6 md:px-24 py-12 bg-white text-gray-700">
-      <h1 className="text-center pb-10 text-2xl md:text-3xl font-bold mb-8 text-gray-700">
-        Harga yang Terjangkau
+    <main
+      id="harga"
+      className="w-full px-6 md:px-24 py-16 bg-black text-white"
+    >
+      <h1 className="text-center pb-12 text-2xl md:text-3xl font-extrabold">
+        Layanan Modena Call Service
       </h1>
 
       {/* Section Wrapper */}
       <div className="space-y-20">
-
-        {/* Item 1 */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+        {/* SERVICE 1 */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-10">
           <Image
             width={400}
-            height={500}
-            alt="Massage Tradisional"
-            unoptimized
-            className="w-full md:w-[350px] h-auto rounded-2xl"
-            src="https://res.cloudinary.com/df6nytit6/image/upload/v1745544326/bundashinta/young-woman-having-face-massage-relaxing-spa-salon-min_gbiomp.jpg"
+            height={400}
+            alt="Service Kompor Freestanding Modena"
+            className="w-full md:w-[360px] h-auto rounded-2xl shadow-lg"
+            src="https://homeservicemodenajakarta.com/wp-content/uploads/2025/11/kompor-freestanding-modena.png"
           />
+
           <div className="max-w-xl text-center md:text-left">
-            <h2 className="text-xl md:text-2xl font-bold mb-3">
-              Massage Tradisional
+            <h2 className="text-xl md:text-2xl font-bold mb-4">
+              Service Kompor Freestanding Modena
             </h2>
-            <p className="text-sm md:text-base leading-relaxed">
-              Massage Tradisional (120 mins) Rp.350
+
+            <p className="text-sm md:text-base leading-relaxed text-white">
+              Layanan profesional untuk{" "}
+              <strong>kompor freestanding Modena</strong>
+              meliputi perbaikan kerusakan, penggantian suku cadang asli,
+              bongkar pasang, serta perawatan rutin agar kompor tetap aman dan
+              berfungsi optimal.
               <br />
-              Massage Tradisional (90 mins) Rp.250
               <br />
-              Thai Massage (120 mins) Rp.450
-              <br />
-              Thai Massage (90 mins) Rp.400
+              Ditangani langsung oleh teknisi berpengalaman dengan standar
+              layanan home service resmi.
             </p>
           </div>
         </div>
 
-        {/* Item 2 */}
-        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-8">
+        {/* SERVICE 2 */}
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-10">
           <div className="max-w-xl text-center md:text-left">
-            <h2 className="text-xl md:text-2xl font-bold mb-3">
-              Sport Massage
+            <h2 className="text-xl md:text-2xl font-bold mb-4">
+              Service Kompor Tanam Modena
             </h2>
-            <p className="text-sm md:text-base leading-relaxed">
-              Sport Massage (120 mins) Rp.400
+
+            <p className="text-sm md:text-base leading-relaxed text-white">
+              Layanan khusus untuk{" "}
+              <strong>kompor tanam (built-in) Modena</strong>
+              yang mencakup perbaikan, penggantian suku cadang, bongkar pasang,
+              serta perawatan menyeluruh untuk menjaga performa dan keamanan
+              penggunaan jangka panjang.
               <br />
-              Sport Massage (90 mins) Rp.300
-            </p>
-            <h2 className="text-xl md:text-2xl font-bold my-3 mt-3">
-              All Treatment
-            </h2>
-            <p className="text-sm md:text-base leading-relaxed">
-            All Treatment (120 mins) Rp.450
               <br />
-              All Treatment (90 mins) Rp.350
+              Cocok untuk rumah modern dengan instalasi dapur built-in.
             </p>
           </div>
+
           <Image
             width={400}
-            height={500}
-            alt="Sport Massage"
-            unoptimized
-            className="w-full md:w-[350px] h-auto rounded-2xl"
-            src="https://res.cloudinary.com/df6nytit6/image/upload/v1745544326/bundashinta/young-beautiful-woman-relaxing-massage-spa-salon-min_f6wdjo.jpg"
+            height={400}
+            alt="Service Kompor Tanam Modena"
+            className="w-full md:w-[360px] h-auto rounded-2xl shadow-lg"
+            src="https://homeservicemodenajakarta.com/wp-content/uploads/2025/11/kompor-tanam-modena-1.png"
           />
         </div>
-
-        {/* Item 3 */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-          <Image
-            width={400}
-            height={500}
-            alt="Massage Refleksi"
-            unoptimized
-            className="w-full md:w-[350px] h-auto rounded-2xl"
-            src="https://res.cloudinary.com/df6nytit6/image/upload/v1745544323/bundashinta/woman-relaxing-spa-min_igwq64.jpg"
-          />
-          <div className="max-w-xl text-center md:text-left">
-            <h2 className="text-xl md:text-2xl font-bold mb-3">
-              Massage Refleksi
-            </h2>
-            <p className="text-sm md:text-base leading-relaxed">
-              Massage Refleksi (120 mins) Rp.350
-              <br />
-              Massage Refleksi (90 mins) Rp.250
-              <br />
-              Tradisional & FaceAcupressue (90 mins) Rp.250
-              <br />
-              Tradisional & FaceAcupressue (120 mins) Rp.350
-              <br />
-              Massage Kerik (120 mins) Rp.350
-              <br />
-              Massage Kerik (90 mins) Rp.250
-              <br />
-              Massage + Lulur (90 mins) Rp.250
-              <br />
-              Massage + Lulur (120 mins) Rp.350
-              <br />
-              Massage Bekam (120 mins) Rp.300
-            </p>
-          </div>
-        </div>
-
       </div>
     </main>
   );

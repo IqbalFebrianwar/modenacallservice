@@ -4,19 +4,19 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="fixed w-full z-10">
-      <Link href="#pemesanan" className="p-3 w-full justify-center flex bg-emerald-600 shadow-sm">
-        <h1 className="font-semibold text-white">
+      <Link href="#pemesanan" className="p-3 w-full justify-center flex bg-white shadow-sm">
+        <h1 className="font-semibold text-black">
           Sentuh disini untuk order pemesanan !
         </h1>
       </Link>
-      <div className="navbar md:px-30 max-md:px-10 bg-neutral-800 text-white shadow-sm">
+      <div className="navbar md:px-30 max-md:px-10 bg-black text-white shadow-sm">
         <div className="navbar-start">
           <Image
             width={90}
             alt="logo"
             height={70}
             className="max-md:w-16"
-            src="https://res.cloudinary.com/df6nytit6/image/upload/v1745417119/bundashinta/logo_shinta_massage_n8pn4c.png"
+            src="https://img.ws.mms.shopee.co.id/82360a0334246ea7e27ff6f6d086981d"
           />
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -25,7 +25,7 @@ const Navbar = () => {
               <Link href="#tentang">Tentang</Link>
             </li>
             <li>
-              <Link href="#harga">Harga</Link>
+              <Link href="#harga">Layanan</Link>
             </li>
             <li>
               <Link href="#testimoni">Testimoni</Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
           </label>
 
           <Link
-            href="https://wa.me/6281382228051?text=Halo%20Bunda%20Shinta%2C%20saya%20ingin%20pesan%20massage"
+            href="https://wa.me/6288290685638"
             className="btn bg-white shadow-none text-neutral-600 rounded-full max-lg:hidden"
           >
             Kontak Kami

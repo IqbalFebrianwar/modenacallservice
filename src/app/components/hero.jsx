@@ -4,21 +4,36 @@ const Hero = () => {
       className="hero min-h-screen"
       style={{
         backgroundImage:
-          "url(https://res.cloudinary.com/df6nytit6/image/upload/v1745543687/bundashinta/tender-african-woman-smiling-enjoying-massage-with-closed-eyes-spa-resort-min_yt2jdx.jpg)",
+          "url(https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1600&q=80)",
       }}
     >
-      <div className="hero-overlay"></div>
+      <div className="hero-overlay bg-black/60"></div>
+
       <div className="hero-content text-neutral-content text-center">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Shinta Massage Spa</h1>
-          <p className="mb-5">
-            Relaxsasi Tanpa Batas, Kenyamanan yang Menghampiri Kamu.
+        <div className="max-w-2xl">
+          <h1 className="mb-6 text-5xl lg:text-6xl font-extrabold">
+            Modena Call <span className="text-primary">Service</span>
+          </h1>
+
+          <p className="mb-8 text-lg text-neutral-content/90">
+            Layanan{" "}
+            <strong>Perbaikan, Perawatan & Penggantian Suku Cadang</strong>
             <br />
-            Layanan massage panggilan profesional langsung ke rumah kamu.
+            Kompor Gas Modena oleh teknisi profesional langsung ke rumah Anda.
           </p>
-          <button className="btn bg-emerald-600 border-0 text-white shadow-none rounded-full">
-            Pelajari selengkapnya
-          </button>
+
+          <div className="flex justify-center gap-4">
+            <a href="#pemesanan" className="btn btn-primary btn-lg rounded-full">
+              Pesan Layanan
+            </a>
+
+            <a
+              href="#harga"
+              className="btn btn-outline btn-lg rounded-full text-white"
+            >
+              Lihat Layanan
+            </a>
+          </div>
         </div>
       </div>
     </div>
