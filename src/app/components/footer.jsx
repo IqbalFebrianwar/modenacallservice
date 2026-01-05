@@ -10,7 +10,7 @@ const Footer = () => {
             Jangkauan Area : Surabaya, Jakarta dan Sekitarnya.
           </p>
           <Link
-            href="https://wa.me/628132022495?"
+            href="https://wa.me/628132022495?text=Halo%20admin%2C%20saya%20butuh%20jasa%20service%20modena"
             className="btn bg-white text-black font-bold border-0 shadow-none px-6 py-3 rounded-full text-sm md:text-base"
           >
             Ayo Sekarang!

@@ -12,7 +12,7 @@ export default function Home() {
     <main className="w-full bg-white pt-28">
       <div className="fixed bottom-6 right-6 flex flex-col gap-4 z-30">
         <Link
-          href="https://wa.me/628132022495?"
+          href="https://wa.me/628132022495?text=Halo%20admin%2C%20saya%20butuh%20jasa%20service%20modena"
           className="bg-emerald-600 hover:bg-emerald-700 text-white p-4 rounded-full shadow-lg transition animate-bounce"
           target="_blank"
           rel="noopener noreferrer"

@@ -105,11 +105,11 @@ export default function RootLayout({ children }) {
               </li>
               <li className="mt-4">
                 <Link
-                  href="https://wa.me/6288290685638"
+                  href="https://wa.me/628132022495?text=Halo%20admin%2C%20saya%20butuh%20jasa%20service%20modena"
                   target="_blank"
                   className="btn bg-white text-black font-semibold border-0 shadow-none rounded-full"
                 >
-                  Hubungi Teknisi
+                  Hubungi Kami
                 </Link>
               </li>
             </ul>

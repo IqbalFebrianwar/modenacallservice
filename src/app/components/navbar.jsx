@@ -57,7 +57,7 @@ const Navbar = () => {
           </label>
 
           <Link
-            href="https://wa.me/628132022495"
+            href="https://wa.me/628132022495?text=Halo%20admin%2C%20saya%20butuh%20jasa%20service%20modena"
             className="btn bg-white shadow-none text-neutral-600 rounded-full max-lg:hidden"
           >
             Kontak Kami
